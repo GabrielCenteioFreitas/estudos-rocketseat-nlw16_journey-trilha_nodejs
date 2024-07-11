@@ -38,7 +38,7 @@ export async function getParticipants(app: FastifyInstance) {
       }
 
       return {
-        paricipants: trip.participants
+        participants: trip.participants
       }
     }
   )
