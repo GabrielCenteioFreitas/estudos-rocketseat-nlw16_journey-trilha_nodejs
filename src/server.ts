@@ -6,6 +6,7 @@ import cors from '@fastify/cors';
 import { confirmParticipant } from "./routes/confirm-participant";
 import { createActivity } from "./routes/create-activity";
 import { getActivities } from "./routes/get-activities";
+import { createLink } from "./routes/create-link";
 
 const app = fastify()
 
@@ -21,6 +22,7 @@ app.register(confirmTrip)
 app.register(confirmParticipant)
 app.register(createActivity)
 app.register(getActivities)
+app.register(createLink)
 
 app.listen({ port: 3333 }).then(() => {
   console.log("🚀 Server running!")
